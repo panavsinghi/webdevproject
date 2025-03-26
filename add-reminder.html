@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Reminder - Subscription Reminder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="add-reminder.html">Add Reminder</a></li>
+            <li><a href="theme.html">Theme</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 class="animated-text">📌 Add a New Reminder</h2>
+        <p>Select the type of reminder and enter the details below.</p>
+
+        <form id="reminderForm">
+            <label for="reminderType">Reminder Type:</label>
+            <select id="reminderType">
+                <option value="subscription">Subscription</option>
+                <option value="birthday">Birthday</option>
+                <option value="event">Event</option>
+            </select>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name">
+
+            <label for="price" id="priceLabel">Price (₹):</label>
+            <input type="number" id="price" placeholder="Enter amount">
+
+            <label for="frequency" id="frequencyLabel">Frequency:</label>
+            <select id="frequency">
+                <option value="Monthly">Monthly</option>
+                <option value="Yearly">Yearly</option>
+            </select>
+
+            <label for="date">Reminder Date:</label>
+            <input type="date" id="date">
+
+            <button type="submit" class="btn">Save Reminder</button>
+        </form>
+
+        <div id="confirmationMessage" class="hidden">✅ Reminder saved! We'll remind you on the required date.</div>
+
+        <ul id="reminderList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

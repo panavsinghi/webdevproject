@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Subscription Reminder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script> 
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="add-reminder.html">Add Reminder</a></li>
+            <li><a href="theme.html">Theme</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="animated-text">Hi! Let's Cover Your Dues</h1>
+
+        <section class="info-section">
+            <h2>Why Use a Subscription Manager?</h2>
+            <p>Managing subscriptions like Netflix, Amazon Prime, Spotify, and more can be difficult. You might forget payment dates, leading to unwanted charges or loss of service.</p>
+            <p>With our **Subscription Reminder**, you can:</p>
+            <ul>
+                <li>✅ Keep track of all your subscriptions in one place.</li>
+                <li>✅ Get timely reminders before due dates.</li>
+                <li>✅ Avoid unwanted auto-renewals.</li>
+                <li>✅ Plan your expenses effectively.</li>
+            </ul>
+        </section>
+
+        <section class="feature-box">
+            <h2>📅 Your Upcoming Subscriptions</h2>
+            <ul id="reminderList"></ul>
+            <p id="noReminders">No upcoming reminders. Add one now!</p>
+            <a href="add-reminder.html" class="btn">➕ Add Reminder</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

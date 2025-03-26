@@ -1,0 +1,259 @@
+/* 🌟 General Styling */
+body {
+    background-color: #1e1e2e;
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* 🌞 Light Mode */
+body.light-mode {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* 🎯 Navigation Menu */
+.menu {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+body.light-mode .menu {
+    background: #ddd !important;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+body.light-mode .menu ul li a {
+    color: black !important;
+}
+
+.menu ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* 📌 Animated Heading */
+.animated-text {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* 🔹 Info Section */
+.info-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    animation: slideIn 1.2s ease-in-out;
+}
+
+body.light-mode .info-section {
+    background: rgba(0, 0, 0, 0.1) !important;
+    color: black !important;
+}
+
+.info-section h2 {
+    color: #ffcc00;
+}
+
+/* 🎯 Feature Box */
+.feature-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+body.light-mode .feature-box {
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 🎨 Buttons */
+.btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+body.light-mode .btn {
+    background: #007bff !important;
+    color: white !important;
+}
+
+.btn:hover {
+    background: #2980b9;
+    transform: scale(1.1);
+}
+
+/* 🌟 Keyframe Animations */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* 🎭 Animations for Buttons */
+.btn-animate {
+    animation: bounce 1s infinite;
+}
+
+/* 🔘 Theme Page Styling */
+.theme-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* 🌞 Light & Dark Theme Buttons */
+.theme-btn {
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#lightTheme {
+    background: #f8d030;
+    color: black;
+}
+
+#lightTheme:hover {
+    background: #ffdd55;
+    transform: scale(1.1);
+}
+
+#darkTheme {
+    background: #2c3e50;
+    color: white;
+}
+
+#darkTheme:hover {
+    background: #34495e;
+    transform: scale(1.1);
+}
+
+/* 📅 Add Reminder Page */
+#reminderForm {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+body.light-mode #reminderForm {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+input, select {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    transform: scale(1.05);
+}
+
+/* 📌 Reminder List */
+#reminderList {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.reminder-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    animation: slideIn 1s ease-in-out;
+}
+
+body.light-mode .reminder-item {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* 🔔 Success Message */
+#confirmationMessage {
+    text-align: center;
+    font-size: 18px;
+    color: #2ecc71;
+    margin-top: 10px;
+    display: none;
+}
+
+/* ❌ Delete Button */
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 3px;
+    transition: background 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
